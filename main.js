@@ -37,7 +37,7 @@ let mainColor = localStorage.getItem('ulColor')
         // Remove All active class
         document.querySelectorAll('.ulColor li').forEach(el => {
             el.classList.remove('active');
-            el.dataset.color === mainColor ? el.classList.add('active') :''
+            el.dataset.color === mainColor ?el.classList.add('active') :''
         });
 
     }
@@ -173,7 +173,7 @@ let mySkill = document.querySelector('.skils')
     }
     // NavBar Section
     let currentScroll = window.pageYOffset;
-    if(pervScroll == 0 || pervScroll < 20){
+    if(pervScroll == 0){
         document.querySelector(".header").style.display = 'flex'
         document.getElementById("navbarFixed").style.display = 'none'
     }
@@ -245,7 +245,6 @@ let navigation = document.querySelectorAll('.nav-bullets .fuck')
     let navBar = document.querySelectorAll('.landing-page ul li')
     scrollToSection(navBar);
 
-    // let theNavBar = document.querySelector('.landing-page ul')
 
     // theNavBar.style.background = 'red'
 
@@ -282,8 +281,8 @@ document.querySelector('.rest').onclick = function(){
 // Media Query The navBar
 
 let buttonBar = document.querySelector('.but-bar'),
-         open = document.querySelector('.open'),
-         spanDad = document.querySelectorAll('.but-bar span')
+        open = document.querySelector('.open'),
+        spanDad = document.querySelectorAll('.but-bar span')
 
 buttonBar.onclick = function(e){
      // أخليه لما يضغط على الزر او على السبان يعمل نفس الاشي
