@@ -4,7 +4,7 @@
     padding: 0;
 }
 /* html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; margin-right: 20px;
 } */
 body{
     font-family: 'Open Sans', sans-serif;
@@ -82,6 +82,7 @@ body{
     background-color: transparent;
     border: none;
     cursor: pointer;
+    margin-right: 20px;
 }
 .but-bar:hover{
     outline: none;
@@ -1052,7 +1053,7 @@ textarea:focus::placeholder{
 ul.open::before {
     content: '';
     position: absolute;
-    right: 0;
+    right: 16px;
     top: -19px;
     border-width: 10px;
     border-style: solid;
